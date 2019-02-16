@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - MA03 - Question 1</title>
+    <style>
+        .btn-submit,.labels,.right-tab{display:inline-block}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Roboto,sans-serif;width:100%;overflow-x:hidden}.form-heading{text-align:center;border-bottom:3px solid #ddd;margin-bottom:30px;padding-bottom:50px;padding-top:50px;color:#11566f;font-size:3em;font-weight:700}.labels{text-align:right;width:40%;padding:10px;vertical-align:top;margin-top:10px}.right-tab{text-align:left;width:48%}#msg,#submit{text-align:center}.input-field{width:90%;padding:10px;margin:10px;border:1px solid silver;font-size:14px}#submit{padding-top:15px}.btn-submit{border-radius:5px;padding:15px 25px;font-size:18px;text-decoration:none;margin:20px;color:#fff;position:relative;align-content:center;background-color:#08bc9a;border-bottom:3px solid #088d74;font-weight:700}.btn-submit:active{top:3px;outline:0}.btn-submit:hover{background-color:#01a183}#msg{color:#B00E11}
+        </style>
+        <body>
+</head>
+<body>
+<!--Contact Form-->
+<form name="contact-form" action="" method="post" onSubmit="return validateForm()">   
+    <div class="form-heading"> Contact Form</div>
+     <div class="row">
+       <div class="labels">
+         <label for="first-name">First Name &#58</label>
+       </div>      
+       <div class="right-tab">
+         <input class="input-field" id="first-name" name="first-name" type="text" placeholder="Enter your first name">        
+       </div>
+     </div>
+     <div class="row">
+       <div class="labels">
+         <label for="last-name" >Last Name &#58</label>
+       </div>      
+       <div class="right-tab">
+         <input class="input-field" id="last-name" name="last-name" type="text" placeholder="Enter your last name">
+       </div>
+     </div>
+     <div class="row">
+       <div class="labels">
+         <label for="email">Email &#58</label>
+       </div>      
+       <div class="right-tab">
+         <input class="input-field" id="email" name="email" type="email" placeholder="Enter your email">
+       </div>
+     </div>
+     <div class="row">
+       <div class="labels">
+         <label for="phone">Phone &#58</label>
+       </div>      
+       <div class="right-tab">
+         <input class="input-field" id="phone" name="phone" type="tel" placeholder="Enter your norwegian tel number">
+       </div>
+     </div>
+     <p id="msg"></p>
+       <div id="submit">
+            <input class="btn-submit" type="submit" value="Submit">
+            </div>
+       </form>
+<script src="script.js"></script>
+</body>
+</html>
