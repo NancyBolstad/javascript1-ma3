@@ -1,6 +1,6 @@
 //Console.log out elements in JSON file
 
-//Just to be clear, this question asks for each of the elements inside the file. I understand the use of elements to mean both keys and values.
+//Just to be clear, this question asks for each of the elements inside the file. I understand the use of "elements" to mean both keys and values.
 
 const myJSON = {
   "video": [{
