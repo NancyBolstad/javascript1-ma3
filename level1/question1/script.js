@@ -15,7 +15,7 @@ function validateForm() {
         document.getElementById("msg").innerHTML = "First name cannot be empty.";
         document.getElementById("first-name").focus();
         return false;
-    } 
+    }
 
     if (lastName == "" || lastName == null) {
         document.getElementById("msg").innerHTML = "Last name cannot be empty.";
@@ -28,17 +28,17 @@ function validateForm() {
         document.getElementById("msg").innerHTML = "Please type in a correct email address.";
         document.getElementById("email").focus();
         return false;
-    }  
-    
+    }
+
     if (phoneRegex.test(phone) == false) {
         document.getElementById("msg").innerHTML = "Please type in a correct Norwegian phone number consisting of 8 digits.";
         document.getElementById("phone").focus();
         return false;
-    } 
+    }
 
-    if (!confirm("Your contact information has been validated. Do you want to submit the form?")){
+    if (!confirm("Your contact information has been validated. Do you want to submit the form?")) {
         return false;
     }
 
     return true;
-    }
+}
